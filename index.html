@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+</head>
+<body>
+
+    <div class="wrap">
+        <div id="timer">
+            <svg width="260" height="260">
+               <circle class="defaultCircle" cx="125" cy="125" r="120" stroke="#ff88fb" stroke-width="10"
+               fill="none" stroke-linecap="round">
+
+               </circle>
+
+            </svg>
+            <span id="minut">00</span> &nbsp;: 
+            <span id="sec">00</span>&nbsp;: 
+            <span id="milisec">00</span>
+        </div>
+        <p>Your time start Now</p>
+        <div class="option">
+            <button id="play" onclick ='start()'><i class="fas fa-play"></i></button>
+            <button id="stop" onclick="stop()"><i class="fa fa-stop"></i>Stop</button>
+            <button id="reset" onclick="reset()"><i class="fa fa-undo"></i></button>
+        </div>
+
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
